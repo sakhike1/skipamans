@@ -69,11 +69,9 @@
           <div>
             <span class="font-bold text-gray-700 dark:text-gray-300">Product Description:</span>
             <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              sed ante justo. Integer euismod libero id mauris malesuada tincidunt. Vivamus commodo nulla ut
-              lorem rhoncus aliquet. Duis dapibus augue vel ipsum pretium, et venenatis sem blandit. Quisque
-              ut erat vitae nisi ultrices placerat non eget velit. Integer ornare mi sed ipsum lacinia, non
-              sagittis mauris blandit. Morbi fermentum libero vel nisl suscipit, nec tincidunt mi consectetur.
+              Made to withstand the test of time, Skipaman T-shirts boast a superior craftsmanship that sets them apart
+              from the rest. Whether you're dressing up for a casual outing or seeking everyday comfort, these T-shirts
+              are the epitome of versatility and reliability.
             </p>
           </div>
         </div>

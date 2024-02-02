@@ -33,7 +33,7 @@
                 class="relative w-full text-left text-black transition-colors duration-200 ease-in-out group-hover:text-gray-900">View
                 Products
               </span>
-              <span class="absolute inset-0 border-2 border-gray-400 rounded-full"></span>
+              <span class="absolute inset-0 border-[0.5px] border-gray-400 rounded-full"></span>
             </button>
           </button>
         </div>
@@ -72,7 +72,7 @@
                   class="relative w-full text-left text-black transition-colors duration-200 ease-in-out group-hover:text-gray-900">View
                   Products
                 </span>
-                <span class="absolute inset-0 border-2 border-gray-400 rounded-full"></span>
+                <span class="absolute inset-0 border-[0.5px]  border-gray-400 rounded-full"></span>
               </button>
             </button>
           </div>
@@ -112,7 +112,7 @@
                   class="relative w-full text-left text-black transition-colors duration-200 ease-in-out group-hover:text-gray-900">View
                   Products
                 </span>
-                <span class="absolute inset-0 border-2 border-gray-400 rounded-full"></span>
+                <span class="absolute inset-0 border-[0.5px]  border-gray-400 rounded-full"></span>
               </button>
             </button>
           </div>
@@ -153,7 +153,7 @@
                   class="relative w-full text-left text-black transition-colors duration-200 ease-in-out group-hover:text-gray-900">View
                   Products
                 </span>
-                <span class="absolute inset-0 border-2 border-gray-400 rounded-full"></span>
+                <span class="absolute inset-0 border-[0.5px]  border-gray-400 rounded-full"></span>
               </button>
             </button>
           </div>

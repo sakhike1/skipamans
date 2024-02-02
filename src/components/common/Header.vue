@@ -16,10 +16,10 @@
       <!-- Search Bar -->
       <div class="hidden md:flex items-center">
         <div class="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-8 xl:space-x-10">
-          <router-link to="/SignUp" title=""
+          <router-link to="/UserLogin" title=""
             class="text-base font-medium text-white p-3 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50">
             <img class="w-6 h-6 object-cover" :src="require('@/assets/user4.png')" alt="My Image" /></router-link>
-          <router-link to="CreateAccount" title=""
+          <router-link to="UserSignup" title=""
             class="text-base font-medium text-white p-3 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50">
             <img class="w-6 h-6 object-cover" :src="require('@/assets/ad.png')" alt="My Image" />
           </router-link>

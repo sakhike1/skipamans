@@ -22,8 +22,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gradient-to-r from-gray-400 via-gray-600 to-blue-800">
-                    <img rel="preload" class="w-[350px] h-[350px] object-cover" :src="currentImage" />
+                <div class="bg-gradient-to-r from-gray-400 via-gray-600  to-blue-800">
+                    <img rel="preload" class="w-[350px] h-[350px] object-cover " :src="currentImage" />
                 </div>
             </div>
         </section>
