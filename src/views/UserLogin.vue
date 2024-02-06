@@ -1,17 +1,16 @@
 <template>
     <!-- component -->
-    <div class="flex h-screen w-full items-center justify-center">
+    <div class="flex flex-col h-screen items-center justify-center mx-auto">
         <video autoplay muted loop class="video-bg"></video>
 
-        <div
-            class="z-10 max-w-3xl h-[400px] w-[550px] p-6 bg-white bg-opacity-40 backdrop-blur-lg rounded drop-shadow-lg md:p-16 opacity-80 md:p-16 opacity-80 rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
-            <div class="self-center mb-6 text-xl font-light text-gray-100 sm:text-2xl dark:text-white">
-                Login your account
+        <div class="z-10 w-full max-w-lg p-6 bg-white bg-opacity-40 backdrop-blur-lg rounded-lg shadow-lg md:p-10 lg:p-16">
+            <div class="mb-6 text-xl font-light text-gray-100 sm:text-2xl dark:text-white">
+                Login to your account
             </div>
             <base-dialog :show="isLoading" title="Authenticating..." fixed></base-dialog>
             <div class="mt-8">
-                <form action="#" autoComplete="off" @submit.prevent="handleSubmit">
-                    <div class="flex flex-col mb-2">
+                <form action="#" autoComplete="off" @submit.prevent="submitForm">
+                    <div class="flex flex-col mb-4">
                         <div class="flex relative">
                             <span
                                 class="rounded-l-md inline-flex items-center px-3 border-t bg-white bg-opacity-20 backdrop-blur-lg border-[1px] border-b border-gray-400 text-gray-500 shadow-sm text-sm">
@@ -23,7 +22,7 @@
                                 </svg>
                             </span>
                             <input type="text" id="sign-in-email"
-                                class="rounded-r-lg flex-1 appearance-none  w-full py-2 px-4 bg-white bg-opacity-20 backdrop-blur-lg text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-1 focus:border-transparent"
+                                class="rounded-r-lg flex-1 appearance-none w-full py-2 px-4 bg-white bg-opacity-20 backdrop-blur-lg text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-1 focus:border-transparent"
                                 placeholder="Your email" v-model.trim="email" />
                         </div>
                     </div>
@@ -39,31 +38,29 @@
                                 </svg>
                             </span>
                             <input type="text" id="sign-in-email"
-                                class="rounded-r-lg flex-1 appearance-none  w-full py-2 px-4 bg-white bg-opacity-20 backdrop-blur-lg text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-1 focus:border-transparent"
+                                class="rounded-r-lg flex-1 appearance-none w-full py-2 px-4 bg-white bg-opacity-20 backdrop-blur-lg text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-1 focus:border-transparent"
                                 placeholder="Your email" v-model.trim="email" />
                         </div>
-                        <p v-if="!formIsValid">Please enter a valid email and password (must be at least 6 characters long).
+                        <p class="text-xs text-gray-700" v-if="!formIsValid">Please enter a valid email and password (must
+                            be at least 6
+                            characters long).
                         </p>
                     </div>
 
-                    <div class="flex items-center mb-6 -mt-4">
-
-                    </div>
                     <div class="flex w-full">
                         <button type="submit"
                             class="glow-on-hover py-2 px-4 bg-gradient-to-r from-slate-500 to-yellow-100 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
                             {{ submitButtonCaption }}
                         </button>
-
                     </div>
                 </form>
             </div>
             <div class="flex items-center justify-center mt-6">
                 <a href="#" target="_blank"
                     class="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white">
-                    <router-link to="CreateAccount" type="button" mode="flat" @click="switchAuthMode">{{
-                        switchModeButtonCaption
-                    }}</router-link>
+                    <router-link to="CreateAccount" type="button" mode="flat" @click="switchAuthMode">
+                        {{ switchModeButtonCaption }}
+                    </router-link>
                 </a>
             </div>
         </div>
@@ -71,9 +68,8 @@
         <MyVideo />
     </div>
 </template>
-  
-<script>
 
+<script>
 import MyVideo from "@/components/MyVideo.vue";
 export default {
     components: {
@@ -139,11 +135,7 @@ export default {
             this.isLoading = false;
         },
         switchAuthMode() {
-            if (this.mode === 'login') {
-                this.mode = 'signup';
-            } else {
-                this.mode = 'login';
-            }
+            this.mode = (this.mode === 'login') ? 'signup' : 'login';
         },
         handleError() {
             this.error = null;
@@ -151,8 +143,8 @@ export default {
     },
 };
 </script>
-  
-<style  scoped>
+
+<style scoped>
 .video-bg {
     position: fixed;
     top: 0;
@@ -176,16 +168,7 @@ export default {
 
 .glow-on-hover:before {
     content: "";
-    background: linear-gradient(45deg,
-            #ff0000,
-            #ff7300,
-            #fffb00,
-            #48ff00,
-            #00ffd5,
-            #002bff,
-            #7a00ff,
-            #ff00c8,
-            #ff0000);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -238,4 +221,3 @@ export default {
     }
 }
 </style>
-  

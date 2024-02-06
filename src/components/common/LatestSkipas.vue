@@ -15,15 +15,16 @@
                             comfortable and stylish for a long time, providing excellent value for your money.
                         </p>
                         <div class="mt-4 sm:mt-8">
-                            <a href="#" @click="randomColor"
+                            <router-link to="/LatestArrival" @click="randomColor"
                                 class="inline-block rounded-full bg-green border border-gray-900   px-4 sm:px-12 py-3 text-sm font-medium hover:text-white hover:bg-black transition  ">
                                 Get your cool now!
-                            </a>
+                            </router-link>
                         </div>
                     </div>
                 </div>
-                <div class="bg-gradient-to-r from-gray-400 via-gray-600  to-blue-800">
-                    <img rel="preload" class="w-[350px] h-[350px] object-cover " :src="currentImage" />
+                <div class="bg-gradient-to-r from-gray-400 via-gray-600 flex items-center justify-center   to-blue-800">
+                    <img rel="preload" class="w-[350px] h-[350px] object-cover max-w-full max-h-full "
+                        :src="currentImage" />
                 </div>
             </div>
         </section>

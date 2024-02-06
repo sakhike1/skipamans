@@ -6,7 +6,7 @@
         <router-link to="/" class="text-white font-bold text-xl pr-4"><img :src="require('@/assets/image.png')"
             class="h-8 ms-2" alt="" /></router-link>
         <router-link to="/LatestArrival" class="hidden md:block text-black px-4">latest arrival</router-link>
-        <router-link to="/ecommerce" class="hidden md:block text-black px-4">Create your own Skipa
+        <router-link to="/CreateTshirt" class="hidden md:block text-black px-4">Create your own Skipa
         </router-link>
         <router-link to="/ecommerce" class="hidden md:block text-black px-4">Kids Apparel</router-link>
       </div>
@@ -47,8 +47,8 @@
       <router-link to="/" class="block text-xs py-2 px-4 text-gray-700">Latest arrival</router-link>
       <router-link to="/about" class="block py-2 text-xs px-4 text-gray-700">Create your own Skipa</router-link>
       <router-link to="/" class="block text-xs py-2 px-4 text-gray-700">kids Apparel</router-link>
-      <router-link to="/about" class="block py-2 text-xs px-4 text-gray-700">Login</router-link>
-      <router-link to="/" class="block text-xs py-2 px-4 text-gray-700">Signup</router-link>
+      <router-link to="/UserLogin" class="block py-2 text-xs px-4 text-gray-700">Login</router-link>
+      <router-link to="UserSignup" class="block text-xs py-2 px-4 text-gray-700">Signup</router-link>
 
       <!-- Add more responsive navigation links as needed -->
       <button @click="closeMenu" @mouseover="rotateElement" @mouseleave="resetRotation"

@@ -6,6 +6,7 @@ import Demo from './components/demo';
 import LatestArrival from "./views/LatestArrival";
 import UserSignup from "./views/UserSignup";
 import UserLogin from "./views/UserLogin";
+import CreateTshirt from "./views/CreateTshirt";
 
 export default [
     {
@@ -19,5 +20,6 @@ export default [
     { path: '/demo', component: Demo },
     { path: '/LatestArrival', component: LatestArrival },
     { path: '/UserSignup', component: UserSignup },
-    { path: '/UserLogin', component: UserLogin }
+    { path: '/UserLogin', component: UserLogin },
+    { path: '/CreateTshirt', component: CreateTshirt }
 ]
